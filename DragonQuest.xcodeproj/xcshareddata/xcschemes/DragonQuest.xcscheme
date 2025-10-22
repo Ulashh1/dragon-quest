@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA3000"
-               BuildableName = "test123.app"
-               BlueprintName = "test123"
-               ReferencedContainer = "container:test123.xcodeproj">
+               BuildableName = "DragonQuest.app"
+               BlueprintName = "DragonQuest"
+               ReferencedContainer = "container:DragonQuest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

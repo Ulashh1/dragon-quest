@@ -1,6 +1,6 @@
 //
-//  test123App.swift
-//  test123
+//  DragonQuestApp.swift
+//  DragonQuest
 //
 //  Main App Entry Point
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct test123App: App {
+struct DragonQuestApp: App {
     // Dependency Injection Container
     private let container = DIContainer.shared
     

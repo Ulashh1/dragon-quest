@@ -1,22 +1,21 @@
-# 📱 test123 - iOS Test Projesi
+# 🐉 Dragon Quest - iOS Görev Takip Uygulaması
 
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange.svg)
 ![iOS](https://img.shields.io/badge/iOS-16.0+-blue.svg)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-4.0-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-iOS uygulaması geliştirme test projesi. SwiftUI, Core Data ve Clean Architecture kullanılarak oluşturulmuştur.
+Kullanıcıları motive eden, oyunlaştırılmış bir görev takip ve ilerleme uygulaması. Görevlerinizi tamamlayın, XP kazanın, level atlayın ve ejderhanızı büyütün! 🔥
 
 ---
 
 ## 💻 Mac Kullanmıyorum!
 
-**Mac kullanmadan test etmek için**:
-- ⚡ **[Hızlı Başlangıç](HIZLI_BASLANGIC.md)** - GitHub'a yükle ve test et
-- 📖 **[Windows Kullanıcıları İçin](WINDOWS_KULLANICILARI_ICIN.md)** - Detaylı kılavuz
-- 🍎 **[Mac Kullanım Kılavuzu](MAC_KULLANIM_KILAVUZU.md)** - Xcode'da açma
+**Windows/Linux kullanıcıları için**:
+- ⚡ **[Hızlı Başlangıç (5 dk)](HIZLI_BASLANGIC.md)** - GitHub'a yükle ve test et
+- 📖 **[Detaylı Kılavuz](WINDOWS_KULLANICILARI_ICIN.md)** - Tüm adımlar ve sorun giderme
 
-GitHub Actions ile otomatik test! 🚀
+GitHub Actions ile Mac olmadan projenizi test edebilirsiniz! 🚀
 
 ---
 
@@ -82,9 +81,9 @@ Proje **Clean Architecture** prensiplerine göre tasarlanmıştır:
 ## 📁 Proje Yapısı
 
 ```
-test123/
+DragonQuest/
 ├── App/                        # Uygulama giriş noktası
-│   ├── test123App.swift        # Main app
+│   ├── DragonQuestApp.swift   # Main app
 │   ├── AppDelegate.swift       # Notification handling
 │   └── DIContainer.swift       # Dependency injection
 │
@@ -105,7 +104,7 @@ test123/
 ├── Data/                       # Veri katmanı
 │   ├── Repositories/           # Repository implementasyonları
 │   ├── CoreData/              # Persistence
-│   │   ├── test123.xcdatamodeld
+│   │   ├── DragonQuest.xcdatamodeld
 │   │   ├── CoreDataManager.swift
 │   │   ├── Entities/
 │   │   └── Mappers/
@@ -142,13 +141,13 @@ Detaylı mimari dokümantasyonu için: [ARCHITECTURE.md](ARCHITECTURE.md)
 
 1. **Repository'yi klonlayın:**
    ```bash
-   git clone https://github.com/Ulashh1/dragon-quest.git
+   git clone https://github.com/yourusername/dragon-quest.git
    cd dragon-quest
    ```
 
 2. **Xcode'da açın:**
    ```bash
-   open test123.xcodeproj
+   open DragonQuest.xcodeproj
    ```
 
 3. **Bağımlılıkları yükleyin (Swift Package Manager):**
@@ -298,7 +297,7 @@ Detaylı XP sistemi dokümantasyonu: [XP_LEVEL_SYSTEM.md](XP_LEVEL_SYSTEM.md)
 ⌘U
 
 # Belirli test suite'i çalıştır
-xcodebuild test -scheme test123 -destination 'platform=iOS Simulator,name=iPhone 15'
+xcodebuild test -scheme DragonQuest -destination 'platform=iOS Simulator,name=iPhone 15'
 ```
 
 ### Test Kapsamı
@@ -348,7 +347,7 @@ Bu proje tamamen **ücretsiz** teknolojiler kullanır:
 
 ### Tema Renkleri
 
-`test123/Presentation/Common/Theme/Colors.swift`:
+`DragonQuest/Presentation/Common/Theme/Colors.swift`:
 
 ```swift
 struct AppColors {
@@ -377,7 +376,7 @@ var defaultXP: Int {
 
 ### Ejderha Animasyonları
 
-`test123/Resources/Animations/` klasörüne Lottie/Rive dosyaları ekleyin:
+`DragonQuest/Resources/Animations/` klasörüne Lottie/Rive dosyaları ekleyin:
 
 - `dragon_egg.json`
 - `dragon_hatchling.json`
@@ -440,9 +439,11 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 👨‍💻 Yazar
 
-**test123 Project**
+**Dragon Quest Team**
 
-- GitHub: https://github.com/Ulashh1/dragon-quest
+- Email: contact@dragonquest.app
+- Website: https://dragonquest.app
+- Twitter: [@DragonQuestApp](https://twitter.com/dragonquestapp)
 
 ## 🙏 Teşekkürler
 
@@ -460,7 +461,7 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ---
 
-**test123 - iOS Test Projesi**
+**Dragon Quest ile hedeflerinize ulaşın ve ejderhanızı büyütün! 🐉✨**
 
 Eğer bu projeyi beğendiyseniz ⭐ vermeyi unutmayın!
 

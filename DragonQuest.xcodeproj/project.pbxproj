@@ -48,8 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA1000 /* test123.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test123.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB0001 /* test123App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test123App.swift; sourceTree = "<group>"; };
+		AA1000 /* DragonQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0001 /* DragonQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonQuestApp.swift; sourceTree = "<group>"; };
 		BB0002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB0003 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		BB0004 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		BB0034 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		BB0035 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BB0036 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		BB0037 /* test123.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = test123.xcdatamodeld; sourceTree = "<group>"; };
+		BB0037 /* DragonQuest.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = DragonQuest.xcdatamodeld; sourceTree = "<group>"; };
 		BB0038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB0039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,12 +104,12 @@
 		CC0000 = {
 			isa = PBXGroup;
 			children = (
-				CC0001 /* test123 */,
+				CC0001 /* DragonQuest */,
 				CC0002 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CC0001 /* test123 */ = {
+		CC0001 /* DragonQuest */ = {
 			isa = PBXGroup;
 			children = (
 				CC0010 /* App */,
@@ -118,13 +118,13 @@
 				CC0040 /* Presentation */,
 				CC0050 /* Resources */,
 			);
-			path = test123;
+			path = DragonQuest;
 			sourceTree = "<group>";
 		};
 		CC0002 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA1000 /* test123.app */,
+				AA1000 /* DragonQuest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 		CC0010 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				BB0001 /* test123App.swift */,
+				BB0001 /* DragonQuestApp.swift */,
 				BB0002 /* AppDelegate.swift */,
 				BB0003 /* DIContainer.swift */,
 			);
@@ -153,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				BB0004 /* CoreDataManager.swift */,
-				BB0037 /* test123.xcdatamodeld */,
+				BB0037 /* DragonQuest.xcdatamodeld */,
 				CC0024 /* Entities */,
 				CC0025 /* Mappers */,
 			);
@@ -358,9 +358,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA3000 /* test123 */ = {
+		AA3000 /* DragonQuest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA4000 /* Build configuration list for PBXNativeTarget "test123" */;
+			buildConfigurationList = AA4000 /* Build configuration list for PBXNativeTarget "DragonQuest" */;
 			buildPhases = (
 				AA2000 /* Frameworks */,
 				AA5000 /* Resources */,
@@ -370,9 +370,9 @@
 			);
 			dependencies = (
 			);
-			name = test123;
-			productName = test123;
-			productReference = AA1000 /* test123.app */;
+			name = DragonQuest;
+			productName = DragonQuest;
+			productReference = AA1000 /* DragonQuest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -403,7 +403,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA3000 /* test123 */,
+				AA3000 /* DragonQuest */,
 			);
 		};
 /* End PBXProject section */
@@ -424,7 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0001 /* test123App.swift in Sources */,
+				AA0001 /* DragonQuestApp.swift in Sources */,
 				AA0002 /* AppDelegate.swift in Sources */,
 				AA0003 /* DIContainer.swift in Sources */,
 				AA0004 /* CoreDataManager.swift in Sources */,
@@ -460,7 +460,7 @@
 				AA0034 /* TaskListView.swift in Sources */,
 				AA0035 /* MainView.swift in Sources */,
 				AA0036 /* MainViewModel.swift in Sources */,
-				AA0037 /* test123.xcdatamodeld in Sources */,
+				AA0037 /* DragonQuest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,7 +596,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = test123/Resources/Info.plist;
+				INFOPLIST_FILE = DragonQuest/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -608,7 +608,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test123.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragonquest.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -627,7 +627,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = test123/Resources/Info.plist;
+				INFOPLIST_FILE = DragonQuest/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -639,7 +639,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test123.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragonquest.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -650,7 +650,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA4000 /* Build configuration list for PBXNativeTarget "test123" */ = {
+		AA4000 /* Build configuration list for PBXNativeTarget "DragonQuest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA9003 /* Debug */,
@@ -659,7 +659,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA8000 /* Build configuration list for PBXProject "test123" */ = {
+		AA8000 /* Build configuration list for PBXProject "DragonQuest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA9001 /* Debug */,
