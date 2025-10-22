@@ -17,7 +17,7 @@ final class CoreDataManager {
     // MARK: - Core Data Stack
     
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "DragonQuest")
+        let container = NSPersistentContainer(name: "test123")
         
         container.loadPersistentStores { storeDescription, error in
             if let error = error as NSError? {
