@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0001 /* DragonQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0001 /* DragonQuestApp.swift */; };
+		AA0002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0002 /* AppDelegate.swift */; };
+		AA0003 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0003 /* DIContainer.swift */; };
+		AA0004 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0004 /* CoreDataManager.swift */; };
+		AA0005 /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0005 /* TaskEntity+CoreDataClass.swift */; };
+		AA0006 /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0006 /* TaskEntity+CoreDataProperties.swift */; };
+		AA0007 /* UserProgressEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0007 /* UserProgressEntity+CoreDataClass.swift */; };
+		AA0008 /* UserProgressEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0008 /* UserProgressEntity+CoreDataProperties.swift */; };
+		AA0009 /* TaskMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0009 /* TaskMapper.swift */; };
+		AA0010 /* UserProgressMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0010 /* UserProgressMapper.swift */; };
+		AA0011 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0011 /* TaskRepository.swift */; };
+		AA0012 /* UserProgressRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0012 /* UserProgressRepository.swift */; };
+		AA0013 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0013 /* CalendarService.swift */; };
+		AA0014 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0014 /* NotificationService.swift */; };
+		AA0015 /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0015 /* Dragon.swift */; };
+		AA0016 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0016 /* Task.swift */; };
+		AA0017 /* TaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0017 /* TaskType.swift */; };
+		AA0018 /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0018 /* UserProgress.swift */; };
+		AA0019 /* NotificationRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0019 /* NotificationRepositoryProtocol.swift */; };
+		AA0020 /* TaskRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0020 /* TaskRepositoryProtocol.swift */; };
+		AA0021 /* UserProgressRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0021 /* UserProgressRepositoryProtocol.swift */; };
+		AA0022 /* ScheduleNotificationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0022 /* ScheduleNotificationUseCase.swift */; };
+		AA0023 /* AddXPUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0023 /* AddXPUseCase.swift */; };
+		AA0024 /* GetUserProgressUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0024 /* GetUserProgressUseCase.swift */; };
+		AA0025 /* CompleteTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0025 /* CompleteTaskUseCase.swift */; };
+		AA0026 /* CreateTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0026 /* CreateTaskUseCase.swift */; };
+		AA0027 /* GetDailyTasksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0027 /* GetDailyTasksUseCase.swift */; };
+		AA0028 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0028 /* View+Extensions.swift */; };
+		AA0029 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0029 /* Colors.swift */; };
+		AA0030 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0030 /* AppCoordinator.swift */; };
+		AA0031 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0031 /* AdminView.swift */; };
+		AA0032 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0032 /* AdminViewModel.swift */; };
+		AA0033 /* DragonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0033 /* DragonView.swift */; };
+		AA0034 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0034 /* TaskListView.swift */; };
+		AA0035 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0035 /* MainView.swift */; };
+		AA0036 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0036 /* MainViewModel.swift */; };
+		AA0037 /* DragonQuest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB0037 /* DragonQuest.xcdatamodeld */; };
+		AA0038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0038 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA1000 /* DragonQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0001 /* DragonQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonQuestApp.swift; sourceTree = "<group>"; };
+		BB0002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB0003 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		BB0004 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		BB0005 /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BB0006 /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BB0007 /* UserProgressEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProgressEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BB0008 /* UserProgressEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProgressEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BB0009 /* TaskMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMapper.swift; sourceTree = "<group>"; };
+		BB0010 /* UserProgressMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgressMapper.swift; sourceTree = "<group>"; };
+		BB0011 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		BB0012 /* UserProgressRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgressRepository.swift; sourceTree = "<group>"; };
+		BB0013 /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+		BB0014 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		BB0015 /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
+		BB0016 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		BB0017 /* TaskType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskType.swift; sourceTree = "<group>"; };
+		BB0018 /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
+		BB0019 /* NotificationRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepositoryProtocol.swift; sourceTree = "<group>"; };
+		BB0020 /* TaskRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepositoryProtocol.swift; sourceTree = "<group>"; };
+		BB0021 /* UserProgressRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgressRepositoryProtocol.swift; sourceTree = "<group>"; };
+		BB0022 /* ScheduleNotificationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleNotificationUseCase.swift; sourceTree = "<group>"; };
+		BB0023 /* AddXPUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddXPUseCase.swift; sourceTree = "<group>"; };
+		BB0024 /* GetUserProgressUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserProgressUseCase.swift; sourceTree = "<group>"; };
+		BB0025 /* CompleteTaskUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTaskUseCase.swift; sourceTree = "<group>"; };
+		BB0026 /* CreateTaskUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskUseCase.swift; sourceTree = "<group>"; };
+		BB0027 /* GetDailyTasksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailyTasksUseCase.swift; sourceTree = "<group>"; };
+		BB0028 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		BB0029 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		BB0030 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BB0031 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		BB0032 /* AdminViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
+		BB0033 /* DragonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonView.swift; sourceTree = "<group>"; };
+		BB0034 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		BB0035 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BB0036 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		BB0037 /* DragonQuest.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = DragonQuest.xcdatamodeld; sourceTree = "<group>"; };
+		BB0038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB0039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA2000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC0000 = {
+			isa = PBXGroup;
+			children = (
+				CC0001 /* DragonQuest */,
+				CC0002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC0001 /* DragonQuest */ = {
+			isa = PBXGroup;
+			children = (
+				CC0010 /* App */,
+				CC0020 /* Data */,
+				CC0030 /* Domain */,
+				CC0040 /* Presentation */,
+				CC0050 /* Resources */,
+			);
+			path = DragonQuest;
+			sourceTree = "<group>";
+		};
+		CC0002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA1000 /* DragonQuest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC0010 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB0001 /* DragonQuestApp.swift */,
+				BB0002 /* AppDelegate.swift */,
+				BB0003 /* DIContainer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CC0020 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CC0021 /* CoreData */,
+				CC0022 /* Repositories */,
+				CC0023 /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CC0021 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BB0004 /* CoreDataManager.swift */,
+				BB0037 /* DragonQuest.xcdatamodeld */,
+				CC0024 /* Entities */,
+				CC0025 /* Mappers */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CC0022 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BB0011 /* TaskRepository.swift */,
+				BB0012 /* UserProgressRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CC0023 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB0013 /* CalendarService.swift */,
+				BB0014 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CC0024 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BB0005 /* TaskEntity+CoreDataClass.swift */,
+				BB0006 /* TaskEntity+CoreDataProperties.swift */,
+				BB0007 /* UserProgressEntity+CoreDataClass.swift */,
+				BB0008 /* UserProgressEntity+CoreDataProperties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CC0025 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				BB0009 /* TaskMapper.swift */,
+				BB0010 /* UserProgressMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		CC0030 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CC0031 /* Entities */,
+				CC0032 /* RepositoryProtocols */,
+				CC0033 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CC0031 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BB0015 /* Dragon.swift */,
+				BB0016 /* Task.swift */,
+				BB0017 /* TaskType.swift */,
+				BB0018 /* UserProgress.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CC0032 /* RepositoryProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				BB0019 /* NotificationRepositoryProtocol.swift */,
+				BB0020 /* TaskRepositoryProtocol.swift */,
+				BB0021 /* UserProgressRepositoryProtocol.swift */,
+			);
+			path = RepositoryProtocols;
+			sourceTree = "<group>";
+		};
+		CC0033 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				CC0034 /* Notification */,
+				CC0035 /* Progress */,
+				CC0036 /* Task */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		CC0034 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				BB0022 /* ScheduleNotificationUseCase.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		CC0035 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				BB0023 /* AddXPUseCase.swift */,
+				BB0024 /* GetUserProgressUseCase.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		CC0036 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				BB0025 /* CompleteTaskUseCase.swift */,
+				BB0026 /* CreateTaskUseCase.swift */,
+				BB0027 /* GetDailyTasksUseCase.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		CC0040 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CC0041 /* Common */,
+				CC0042 /* Coordinators */,
+				CC0043 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CC0041 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CC0044 /* Extensions */,
+				CC0045 /* Theme */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CC0042 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BB0030 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CC0043 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CC0046 /* Admin */,
+				CC0047 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CC0044 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB0028 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC0045 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				BB0029 /* Colors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		CC0046 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				BB0031 /* AdminView.swift */,
+				BB0032 /* AdminViewModel.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		CC0047 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BB0035 /* MainView.swift */,
+				BB0036 /* MainViewModel.swift */,
+				CC0048 /* Components */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CC0048 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BB0033 /* DragonView.swift */,
+				BB0034 /* TaskListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CC0050 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB0038 /* Assets.xcassets */,
+				BB0039 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA3000 /* DragonQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4000 /* Build configuration list for PBXNativeTarget "DragonQuest" */;
+			buildPhases = (
+				AA2000 /* Frameworks */,
+				AA5000 /* Resources */,
+				AA6000 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragonQuest;
+			productName = DragonQuest;
+			productReference = AA1000 /* DragonQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA7000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA3000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA8000 /* Build configuration list for PBXProject "DragonQuest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC0000;
+			productRefGroup = CC0002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA3000 /* DragonQuest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA5000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0038 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA6000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0001 /* DragonQuestApp.swift in Sources */,
+				AA0002 /* AppDelegate.swift in Sources */,
+				AA0003 /* DIContainer.swift in Sources */,
+				AA0004 /* CoreDataManager.swift in Sources */,
+				AA0005 /* TaskEntity+CoreDataClass.swift in Sources */,
+				AA0006 /* TaskEntity+CoreDataProperties.swift in Sources */,
+				AA0007 /* UserProgressEntity+CoreDataClass.swift in Sources */,
+				AA0008 /* UserProgressEntity+CoreDataProperties.swift in Sources */,
+				AA0009 /* TaskMapper.swift in Sources */,
+				AA0010 /* UserProgressMapper.swift in Sources */,
+				AA0011 /* TaskRepository.swift in Sources */,
+				AA0012 /* UserProgressRepository.swift in Sources */,
+				AA0013 /* CalendarService.swift in Sources */,
+				AA0014 /* NotificationService.swift in Sources */,
+				AA0015 /* Dragon.swift in Sources */,
+				AA0016 /* Task.swift in Sources */,
+				AA0017 /* TaskType.swift in Sources */,
+				AA0018 /* UserProgress.swift in Sources */,
+				AA0019 /* NotificationRepositoryProtocol.swift in Sources */,
+				AA0020 /* TaskRepositoryProtocol.swift in Sources */,
+				AA0021 /* UserProgressRepositoryProtocol.swift in Sources */,
+				AA0022 /* ScheduleNotificationUseCase.swift in Sources */,
+				AA0023 /* AddXPUseCase.swift in Sources */,
+				AA0024 /* GetUserProgressUseCase.swift in Sources */,
+				AA0025 /* CompleteTaskUseCase.swift in Sources */,
+				AA0026 /* CreateTaskUseCase.swift in Sources */,
+				AA0027 /* GetDailyTasksUseCase.swift in Sources */,
+				AA0028 /* View+Extensions.swift in Sources */,
+				AA0029 /* Colors.swift in Sources */,
+				AA0030 /* AppCoordinator.swift in Sources */,
+				AA0031 /* AdminView.swift in Sources */,
+				AA0032 /* AdminViewModel.swift in Sources */,
+				AA0033 /* DragonView.swift in Sources */,
+				AA0034 /* TaskListView.swift in Sources */,
+				AA0035 /* MainView.swift in Sources */,
+				AA0036 /* MainViewModel.swift in Sources */,
+				AA0037 /* DragonQuest.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA9001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA9002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA9003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DragonQuest/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragonquest.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA9004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DragonQuest/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragonquest.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA4000 /* Build configuration list for PBXNativeTarget "DragonQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9003 /* Debug */,
+				AA9004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA8000 /* Build configuration list for PBXProject "DragonQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9001 /* Debug */,
+				AA9002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA7000 /* Project object */;
+}
+
