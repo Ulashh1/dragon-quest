@@ -1,0 +1,248 @@
+Dragon Quest - Proje Klasör Yapısı
+=====================================
+
+DragonQuest/
+│
+├── 📱 App/                                    # Uygulama Giriş Noktası
+│   ├── DragonQuestApp.swift                  # Main App (@main)
+│   ├── AppDelegate.swift                     # Notification & Lifecycle
+│   └── DIContainer.swift                     # Dependency Injection Container
+│
+├── 🎯 Domain/                                 # İş Mantığı Katmanı (Framework-independent)
+│   │
+│   ├── Entities/                             # Domain Modelleri
+│   │   ├── Task.swift                        # Görev entity
+│   │   ├── UserProgress.swift                # İlerleme entity
+│   │   ├── Dragon.swift                      # Ejderha entity & DragonStage enum
+│   │   └── TaskType.swift                    # TaskType & TaskPriority enums
+│   │
+│   ├── UseCases/                             # Atomik İş Operasyonları
+│   │   │
+│   │   ├── Task/                             # Görev use case'leri
+│   │   │   ├── CreateTaskUseCase.swift       # Görev oluşturma
+│   │   │   ├── CompleteTaskUseCase.swift     # Görev tamamlama + XP
+│   │   │   └── GetDailyTasksUseCase.swift    # Günlük görevleri getir
+│   │   │
+│   │   ├── Progress/                         # İlerleme use case'leri
+│   │   │   ├── AddXPUseCase.swift            # XP ekleme + level atlama
+│   │   │   └── GetUserProgressUseCase.swift  # Progress bilgisi
+│   │   │
+│   │   └── Notification/                     # Bildirim use case'leri
+│   │       └── ScheduleNotificationUseCase.swift
+│   │
+│   └── RepositoryProtocols/                  # Repository Arayüzleri
+│       ├── TaskRepositoryProtocol.swift
+│       ├── UserProgressRepositoryProtocol.swift
+│       └── NotificationRepositoryProtocol.swift
+│
+├── 💾 Data/                                   # Veri Katmanı
+│   │
+│   ├── Repositories/                         # Repository Implementasyonları
+│   │   ├── TaskRepository.swift              # Task CRUD + Combine publisher
+│   │   ├── UserProgressRepository.swift      # Progress CRUD
+│   │   └── NotificationRepository.swift      # (NotificationService implements)
+│   │
+│   ├── CoreData/                             # Persistence Layer
+│   │   │
+│   │   ├── DragonQuest.xcdatamodeld/         # Core Data Model
+│   │   │   └── DragonQuest.xcdatamodel/
+│   │   │       └── contents                  # Entity definitions (XML)
+│   │   │
+│   │   ├── CoreDataManager.swift             # Core Data Stack Manager
+│   │   │
+│   │   ├── Entities/                         # Core Data Entity Classes
+│   │   │   ├── TaskEntity+CoreDataClass.swift
+│   │   │   ├── TaskEntity+CoreDataProperties.swift
+│   │   │   ├── UserProgressEntity+CoreDataClass.swift
+│   │   │   └── UserProgressEntity+CoreDataProperties.swift
+│   │   │
+│   │   └── Mappers/                          # Entity ↔ Domain Mappers
+│   │       ├── TaskMapper.swift              # TaskEntity ↔ Task
+│   │       └── UserProgressMapper.swift      # UserProgressEntity ↔ UserProgress
+│   │
+│   └── Services/                             # External Services
+│       ├── NotificationService.swift         # UNUserNotificationCenter wrapper
+│       └── CalendarService.swift             # EventKit wrapper (opsiyonel)
+│
+├── 🎨 Presentation/                           # UI Katmanı
+│   │
+│   ├── Coordinators/                         # Navigation Management
+│   │   └── AppCoordinator.swift              # App-level navigation
+│   │
+│   ├── Scenes/                               # Ekranlar
+│   │   │
+│   │   ├── Main/                             # Ana Ekran
+│   │   │   ├── MainView.swift                # SwiftUI ana view
+│   │   │   ├── MainViewModel.swift           # Ana ekran business logic
+│   │   │   │
+│   │   │   └── Components/                   # Alt komponenler
+│   │   │       ├── DragonView.swift          # Ejderha görseli
+│   │   │       └── TaskListView.swift        # Görev listesi & components
+│   │   │
+│   │   ├── Admin/                            # Admin Panel
+│   │   │   ├── AdminView.swift               # Admin UI
+│   │   │   └── AdminViewModel.swift          # Admin business logic
+│   │   │
+│   │   └── Settings/                         # Ayarlar (gelecekte)
+│   │       ├── SettingsView.swift
+│   │       └── SettingsViewModel.swift
+│   │
+│   └── Common/                               # Ortak UI Bileşenleri
+│       │
+│       ├── Theme/                            # Tasarım Sistemi
+│       │   └── Colors.swift                  # AppColors, AppFonts, AppSpacing
+│       │
+│       └── Extensions/                       # View Extensions
+│           └── View+Extensions.swift         # Custom modifiers
+│
+├── 🎬 Resources/                              # Kaynaklar
+│   ├── Animations/                           # Lottie/Rive animasyonlar
+│   │   ├── dragon_egg.json                   # (gelecekte)
+│   │   ├── dragon_hatchling.json
+│   │   └── dragon_adult.json
+│   │
+│   └── Images.xcassets/                      # Görseller
+│       ├── AppIcon.appiconset/
+│       └── Colors/
+│
+├── 🧪 Tests/                                  # Test Dosyaları (gelecekte)
+│   │
+│   ├── DomainTests/
+│   │   └── UseCaseTests/
+│   │       ├── CreateTaskUseCaseTests.swift
+│   │       └── CompleteTaskUseCaseTests.swift
+│   │
+│   ├── DataTests/
+│   │   └── RepositoryTests/
+│   │       └── TaskRepositoryTests.swift
+│   │
+│   └── PresentationTests/
+│       └── ViewModelTests/
+│           └── MainViewModelTests.swift
+│
+└── 📚 Documentation/                          # Dokümantasyon Dosyaları
+    ├── README.md                             # Ana proje dokümantasyonu
+    ├── ARCHITECTURE.md                       # Mimari detayları
+    ├── XP_LEVEL_SYSTEM.md                    # XP & Level sistemi
+    ├── GETTING_STARTED.md                    # Başlangıç kılavuzu
+    ├── USAGE_EXAMPLES.md                     # Kod kullanım örnekleri
+    ├── PROJECT_SUMMARY.md                    # Proje özeti & durum
+    ├── FOLDER_STRUCTURE.txt                  # Bu dosya
+    ├── LICENSE                               # MIT License
+    └── .gitignore                            # Git ignore rules
+
+
+════════════════════════════════════════════════════════════════════════════
+
+📊 İSTATİSTİKLER
+════════════════════════════════════════════════════════════════════════════
+
+Toplam Dosya Sayısı:      ~60 dosya
+Swift Kod Dosyası:        ~45 dosya
+Dokümantasyon:            ~8 dosya
+
+Katman Bazında:
+├── Domain Layer:         13 dosya (entities, use cases, protocols)
+├── Data Layer:           13 dosya (repositories, Core Data, services)
+├── Presentation Layer:   12 dosya (views, view models, coordinators)
+├── App Layer:            3 dosya
+├── Common/Resources:     4 dosya
+└── Documentation:        8 dosya
+
+════════════════════════════════════════════════════════════════════════════
+
+🎯 KATMAN SORUMLULUKLAR
+════════════════════════════════════════════════════════════════════════════
+
+📱 App Layer
+  → Uygulama başlangıcı
+  → Dependency injection setup
+  → Notification lifecycle
+
+🎯 Domain Layer (Clean Architecture Core)
+  → Framework-independent
+  → Pure Swift entities
+  → Business logic (use cases)
+  → Repository contracts (protocols)
+
+💾 Data Layer
+  → Core Data persistence
+  → Repository implementations
+  → External service wrappers
+  → Entity ↔ Domain mapping
+
+🎨 Presentation Layer
+  → SwiftUI views
+  → ViewModels (MVVM)
+  → Navigation (Coordinator)
+  → UI components & themes
+
+════════════════════════════════════════════════════════════════════════════
+
+🔗 BAĞIMLILIK YÖNLERİ
+════════════════════════════════════════════════════════════════════════════
+
+Presentation ──→ Domain ←── Data
+     ↓              ↓           ↓
+   Views      Use Cases   Repositories
+     ↓              ↓           ↓
+ViewModels     Entities    Core Data
+                   ↑
+                   │
+            (Framework-independent)
+
+Kurallar:
+✅ Domain hiçbir katmana bağımlı değil
+✅ Data ve Presentation sadece Domain'e bağımlı
+✅ UI hiçbir zaman doğrudan Data'ya erişmez
+✅ Tüm bağımlılıklar Protocol üzerinden
+
+════════════════════════════════════════════════════════════════════════════
+
+📝 DOSYA İSİMLENDİRME KURALLARI
+════════════════════════════════════════════════════════════════════════════
+
+Entities:         Task.swift, UserProgress.swift
+Use Cases:        CreateTaskUseCase.swift, AddXPUseCase.swift
+Protocols:        TaskRepositoryProtocol.swift
+Implementations:  TaskRepository.swift
+View Models:      MainViewModel.swift
+Views:            MainView.swift
+Extensions:       View+Extensions.swift
+Core Data:        TaskEntity+CoreDataProperties.swift
+
+════════════════════════════════════════════════════════════════════════════
+
+🎨 TASARIM DESENLERI
+════════════════════════════════════════════════════════════════════════════
+
+├── MVVM (Model-View-ViewModel)
+│   View ↔ ViewModel ↔ Model
+│
+├── Clean Architecture
+│   Presentation → Domain ← Data
+│
+├── Repository Pattern
+│   Protocol ← Implementation
+│
+├── Use Case Pattern
+│   Single Responsibility per operation
+│
+├── Dependency Injection
+│   Protocol-based, Constructor injection
+│
+├── Coordinator Pattern
+│   Centralized navigation
+│
+└── Mapper Pattern
+    CoreDataEntity ↔ DomainEntity
+
+════════════════════════════════════════════════════════════════════════════
+
+✨ Proje yapısı Clean Architecture prensipleri ile tasarlanmıştır.
+   Her katman tek bir sorumluluğa sahiptir ve test edilebilir durumdadır.
+
+🐉 Dragon Quest - Built with Clean Architecture & MVVM
+════════════════════════════════════════════════════════════════════════════
+
+
