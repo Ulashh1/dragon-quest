@@ -1,11 +1,11 @@
-# 🐉 Dragon Quest - iOS Görev Takip Uygulaması
+# 📱 test123 - iOS Uygulaması
 
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange.svg)
 ![iOS](https://img.shields.io/badge/iOS-16.0+-blue.svg)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-4.0-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Kullanıcıları motive eden, oyunlaştırılmış bir görev takip ve ilerleme uygulaması. Görevlerinizi tamamlayın, XP kazanın, level atlayın ve ejderhanızı büyütün! 🔥
+iOS test ve geliştirme projesi. SwiftUI, CoreData ve Clean Architecture kullanılarak geliştirilmiştir.
 
 ---
 
@@ -439,11 +439,9 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 👨‍💻 Yazar
 
-**Dragon Quest Team**
+**test123 Project**
 
-- Email: contact@dragonquest.app
-- Website: https://dragonquest.app
-- Twitter: [@DragonQuestApp](https://twitter.com/dragonquestapp)
+- GitHub: https://github.com/Ulashh1/dragon-quest
 
 ## 🙏 Teşekkürler
 
@@ -461,7 +459,7 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ---
 
-**Dragon Quest ile hedeflerinize ulaşın ve ejderhanızı büyütün! 🐉✨**
+**test123 - iOS Projesi**
 
 Eğer bu projeyi beğendiyseniz ⭐ vermeyi unutmayın!
 
